@@ -1,10 +1,20 @@
 {
-	"name": "com.frostpeakstudios.template",
-	"displayName":"Template",
-	"version": "0.1.0",
-	"unity": "2021.3",
-	"description": "Template for Unity UPM packages.",
-	"dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1"
+    "name": "com.frostpeakstudios.upm-template",
+    "version": "1.0.0",
+    "displayName": "Frostpeak Studios UPM Template",
+    "description": "Template for Unity UPM packages.",
+    "unity": "2021.3",
+    "documentationUrl": "https://github.com/frostpeak-studios/project-template-upm/blob/main/README.md",
+    "changelogUrl": "https://github.com/frostpeak-studios/project-template-upm/blob/main/CHANGELOG.md",
+    "dependencies": {},
+    "keywords": [
+        "upm",
+        "template",
+        "frostpeak"
+    ],
+    "author": {
+        "name": "Frostpeak Studios",
+        "email": "support@frostpeakstudios.com",
+        "url": "https://frostpeakstudios.com"
     }
 }
