@@ -1,14 +1,25 @@
 {
     "name": "Frostpeak.Template.Editor.Tests",
+    "rootNamespace": "Frostpeak",
     "references": [
         "Frostpeak.Template.Editor",
-        "Frostpeak.Template"
-    ],
-    "optionalUnityReferences": [
-        "TestAssemblies"
+        "Frostpeak.Template",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
     ],
     "includePlatforms": [
         "Editor"
     ],
-    "excludePlatforms": []
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
