@@ -1,0 +1,36 @@
+# Sync with Upstream Template
+#
+# This workflow is used in repos that are based on a template repository.
+# It syncs the template-based repository with the latest changes from the upstream template repository.
+name: sync-with-upstream-template.yml
+
+on:
+  schedule:
+    - cron:  "0 1 * * MON"
+  workflow_dispatch:
+
+env:
+  SOURCE_BRANCH: main
+  SOURCE_REPOSITORY: frostpeak-studios/project-template-upm
+
+jobs:
+  sync-repo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout ${{ github.repository }}
+        uses: actions/checkout@v4
+        if: github.repository != env.SOURCE_REPOSITORY
+
+      # Doc: https://github.com/marketplace/actions/actions-template-sync
+      - name: Sync with upstream template repository
+        uses: AndreasAugustin/actions-template-sync@v2
+        if: github.repository != env.SOURCE_REPOSITORY
+        with:
+          source_repo_path: ${{ env.SOURCE_REPOSITORY }}
+          upstream_branch: ${{ env.SOURCE_BRANCH }}
+          pr_title: "[actions-template-sync] Upstream template update"
+          pr_commit_msg: "chore(template): sync with upstream template"
