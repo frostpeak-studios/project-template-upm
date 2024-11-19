@@ -1,0 +1,230 @@
+############################
+########### EOL ############
+############################
+*     eol=lf   text=auto
+# Windows files are CRLF
+*.bat eol=crlf
+*.cmd eol=crlf
+*.ps1 eol=crlf
+
+############################
+########## MACROS ##########
+############################
+# Unity YAML files are treated specially.
+[attr]unityyaml diff=text merge=unityyamlmerge
+# LFS (Large File Storage) tracked files.
+[attr]lfs filter=lfs diff=lfs merge=lfs -text
+
+############################
+########### CODE ###########
+############################
+*.cs         text diff=csharp
+*.cpp        text diff=cpp
+*.h          text diff=cpp
+*.hpp        text diff=cpp
+*.java       text diff=java
+*.py         text diff=python
+*.js         text diff=javascript
+*.ts         text diff=typescript
+*.go         text diff=go
+*.rb         text diff=ruby
+*.php        text diff=php
+*.swift      text diff=swift
+*.html       text diff=html
+*.css        text diff=css
+*.xml        text diff=xml
+*.json       text diff=json
+*.yaml       text diff=yaml
+*.yml        text diff=yaml
+*.toml       text diff=toml
+*.hcl        text diff=hcl
+*.md         text diff=markdown
+*.sh         text diff=shell
+*.bash       text diff=shell
+*.cmd        text diff=shell
+*.bat        text diff=shell
+*.ps1        text diff=powershell
+*.env        text diff=dotenv
+*.ini        text diff=ini
+*.cfg        text diff=ini
+*.conf       text diff=ini
+*.config     text diff=ini
+*.props      text diff=properties
+*.properties text diff=properties
+# Unity assembly def/ref files are in JSON format.
+*.asmdef     text diff=json
+*.asmref     text diff=json
+
+#############################
+##### UNITY TEXT ASSETS #####
+#############################
+*.meta               unityyaml
+*.unity              unityyaml
+*.asset              unityyaml
+*.prefab             unityyaml
+*.mat                unityyaml
+*.anim               unityyaml
+*.controller         unityyaml
+*.overrideController unityyaml
+*.physicMaterial     unityyaml
+*.physicsMaterial2D  unityyaml
+*.playable           unityyaml
+*.mask               unityyaml
+*.brush              unityyaml
+*.flare              unityyaml
+*.fontsettings       unityyaml
+*.guiskin            unityyaml
+*.giparams           unityyaml
+*.renderTexture      unityyaml
+*.spriteatlas        unityyaml
+*.terrainlayer       unityyaml
+*.mixer              unityyaml
+*.shadervariants     unityyaml
+*.preset             unityyaml
+
+###############################
+###### COLLAPSE IN DIFF #######
+###############################
+*.asset              linguist-generated
+*.mat                linguist-generated
+*.meta               linguist-generated
+*.prefab             linguist-generated
+*.unity              linguist-generated
+*.controller         linguist-generated
+*.anim               linguist-generated
+*.overrideController linguist-generated
+*.shader             linguist-generated
+*.shadervariants     linguist-generated
+*.tps                linguist-generated
+*.scene              linguist-generated
+*.uasset             linguist-generated
+*.umap               linguist-generated
+*.uproject           linguist-generated
+*.meta               linguist-generated
+*.uplugin            linguist-generated
+*.usf                linguist-generated
+*.ush                linguist-generated
+
+#############################
+#### UNITY BINARY ASSETS ####
+#############################
+*.cubemap                lfs
+*.unitypackage           lfs
+*-[Tt]errain.asset       lfs -unityyaml
+*-[Nn]av[Mm]esh.asset    lfs -unityyaml
+
+#############################
+### UNREAL BINARY ASSETS ####
+#############################
+*.uasset                 lfs
+*.umap                   lfs
+*.upk                    lfs
+*.udk                    lfs
+/RawContent/**/*         lfs
+
+############################
+########### IMAGE ##########
+############################
+*.png                    lfs
+*.jpg                    lfs
+*.jpeg                   lfs
+*.gif                    lfs
+*.bmp                    lfs
+*.svg                    lfs
+*.webp                   lfs
+*.tiff                   lfs
+*.tif                    lfs
+*.ico                    lfs
+*.hdr                    lfs
+*.exr                    lfs
+*.raw                    lfs
+*.psd                    lfs
+*.xcf                    lfs
+*.ai                     lfs
+*.tga                    lfs
+
+############################
+############ 3D ############
+############################
+*.obj                    lfs
+*.fbx                    lfs
+*.stl                    lfs
+*.dae                    lfs
+*.3ds                    lfs
+*.max                    lfs
+*.blend                  lfs
+*.ply                    lfs
+*.gltf                   lfs
+*.glb                    lfs
+*.mb                     lfs
+
+############################
+########## AUDIO  ##########
+############################
+*.mp3                    lfs
+*.wav                    lfs
+*.flac                   lfs
+*.aac                    lfs
+*.ogg                    lfs
+*.m4a                    lfs
+*.wma                    lfs
+
+############################
+########## VIDEO ###########
+############################
+*.mp4                    lfs
+*.m4v                    lfs
+*.mov                    lfs
+*.avi                    lfs
+*.mkv                    lfs
+*.flv                    lfs
+*.webm                   lfs
+*.wmv                    lfs
+*.mpg                    lfs
+*.mpeg                   lfs
+
+############################
+######## EXECUTABLE ########
+############################
+*.exe                    lfs
+*.dll                    lfs
+*.bin                    lfs
+*.app                    lfs
+*.msi                    lfs
+*.sys                    lfs
+*.out                    lfs
+*.so                     lfs
+*.o                      lfs
+*.dylib                  lfs
+*.bundle                 lfs
+*.jar                    lfs
+*.war                    lfs
+*.ear                    lfs
+*.apk                    lfs
+*.ipa                    lfs
+*.pak                    lfs
+*.iso                    lfs
+*.rom                    lfs
+*.img                    lfs
+
+############################
+######### ARCHIVE ##########
+############################
+*.zip                    lfs
+*.tar                    lfs
+*.gz                     lfs
+*.tgz                    lfs
+*.bz2                    lfs
+*.xz                     lfs
+*.rar                    lfs
+*.7z                     lfs
+*.dmg                    lfs
+*.apk                    lfs
+*.deb                    lfs
+*.rpm                    lfs
+*.pkg                    lfs
+*.snap                   lfs
+*.tar.gz                 lfs
+*.tar.bz2                lfs
+*.tar.xz                 lfs
+*.tar.zst                lfs

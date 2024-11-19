@@ -1,0 +1,14 @@
+{
+    "name": "Frostpeak.Template.Editor.Tests",
+    "references": [
+        "Frostpeak.Template.Editor",
+        "Frostpeak.Template"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

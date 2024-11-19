@@ -1,0 +1,10 @@
+{
+    "name": "Frostpeak.Template.Editor",
+    "references": [
+      "Frostpeak.Template"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

@@ -1,0 +1,10 @@
+{
+	"name": "com.frostpeakstudios.template",
+	"displayName":"Template",
+	"version": "0.1.0",
+	"unity": "2021.3",
+	"description": "Template for Unity UPM packages.",
+	"dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+    }
+}

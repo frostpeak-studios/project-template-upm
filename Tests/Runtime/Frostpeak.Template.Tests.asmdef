@@ -1,0 +1,11 @@
+{
+    "name": "Frostpeak.Template.Tests",
+    "references": [
+        "Frostpeak.Template"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}
