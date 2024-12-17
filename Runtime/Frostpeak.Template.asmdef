@@ -1,6 +1,6 @@
 {
     "name": "Frostpeak.Template",
-    "rootNamespace": "Frostpeak",
+    "rootNamespace": "Frostpeak.Template",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

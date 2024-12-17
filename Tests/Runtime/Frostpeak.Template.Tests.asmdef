@@ -1,6 +1,6 @@
 {
     "name": "Frostpeak.Template.Tests",
-    "rootNamespace": "Frostpeak",
+    "rootNamespace": "Frostpeak.Template.Tests",
     "references": [
         "Frostpeak.Template",
         "UnityEngine.TestRunner",
@@ -15,7 +15,8 @@
     ],
     "autoReferenced": false,
     "defineConstraints": [
-        "UNITY_INCLUDE_TESTS"
+        "UNITY_INCLUDE_TESTS",
+        "PEAK_TESTING"
     ],
     "versionDefines": [],
     "noEngineReferences": false
