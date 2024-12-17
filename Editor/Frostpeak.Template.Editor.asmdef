@@ -1,6 +1,6 @@
 {
     "name": "Frostpeak.Template.Editor",
-    "rootNamespace": "Frostpeak",
+    "rootNamespace": "Frostpeak.Template.Editor",
     "references": [
         "Frostpeak.Template"
     ],
