@@ -29,6 +29,7 @@ xcuserdata/
 ### GAME ENGINE ###
 
 ## Unity ##
+/[Cc]ode[Cc]overage/
 /[Ll]ibrary/
 /[Mm]emoryCaptures/
 /[Rr]ecordings/
@@ -82,6 +83,11 @@ sysinfo.txt
 # Unity projects have lots of .meta files that need to be tracked.
 #*.meta
 
+# Unity auto-generates these files, comment them out if non-Unity project.
+*.csproj
+*.sln
+*.DotSettings
+
 ## Unreal ##
 Build/*/**
 !Build/*/
@@ -130,9 +136,6 @@ ehthumbs_vista.db
 
 ## Linux ##
 *~
-# Unity UPM packages may contain Documentation~ and Samples~ folders.
-!**/Documentation~
-!**/Samples~
 .fuse_hidden*
 .directory
 .Trash-*
@@ -203,10 +206,6 @@ fastlane/test_output
 **/[Xx]64/
 **/[Xx]86/
 **/[Ww][Ii][Nn]32/
-# Frostpeak plugins may have a Build folder that contains scripts for build pipelines,
-# prebuild processors, build settings, etc. These should be tracked.
-!**/Frostpeak/**/Build
-!**/Packages/**/Build
 
 ## Logs ##
 **/[Ll]og/

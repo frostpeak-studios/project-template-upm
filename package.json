@@ -1,6 +1,6 @@
 {
     "name": "com.frostpeakstudios.upm-template",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName": "Frostpeak Studios UPM Template",
     "description": "Template for Unity UPM packages.",
     "unity": "2021.3",
