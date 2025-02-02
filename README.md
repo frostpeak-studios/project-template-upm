@@ -6,15 +6,13 @@ This is a template for creating UPM packages. We use this for developing and mai
 
 1. Use this repository as a template for your new package
 2. Clone the repository to your local machine
-3. Modify the `package.json` file to define your package
-4. Modify the `README.md` and `Documentation/Template.md` files to include your package's info
-5. Modify the assemblies and namespaces to match your org/package name
-   - `Frostpeak.Template` -> `YourOrg.YourPackage`
-   - `Frostpeak.Template.Tests` -> `YourOrg.YourPackage.Tests`
-   - `Frostpeak.Template.Editor` -> `YourOrg.YourPackage.Editor`
-   - `Frostpeak.Template.Editor.Tests` -> `YourOrg.YourPackage.Editor.Tests`
-6. For non Frostpeak Studios packages, remove the `PEAK_TESTING` define constraint from the test assemblies
-7. Develop your package
+3. Run the `bootstrap.sh` (or `bootstrap.ps1` for Windows) script to rename assemblies and namespaces.
+   - This will replace the `Template` name with your package's name
+   - Name must not contain whitespace
+   - These scripts can be deleted after running
+4. Modify the `package.json` file to define your package, **this is not modified by the bootstrap script**
+5. Modify the `README.md` and `Documentation/Template.md` files to include your package's info
+6. Develop your package
 
 ## Development Workflow
 
